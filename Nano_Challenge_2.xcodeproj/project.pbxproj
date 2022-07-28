@@ -13,9 +13,17 @@
 		42A75EE3288E3EFD000B600F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42A75EE2288E3EFD000B600F /* Preview Assets.xcassets */; };
 		42A75EE5288E3EFD000B600F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A75EE4288E3EFD000B600F /* Persistence.swift */; };
 		42A75EE8288E3EFD000B600F /* Nano_Challenge_2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42A75EE6288E3EFD000B600F /* Nano_Challenge_2.xcdatamodeld */; };
+		42A75EF1288E4129000B600F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A75EF0288E4129000B600F /* CloudKit.framework */; };
+		42A75EF5288E4BF5000B600F /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A75EF4288E4BF5000B600F /* ListView.swift */; };
+		42A75EF7288E4C16000B600F /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A75EF6288E4C16000B600F /* AddView.swift */; };
+		42C294652890EC49008A1276 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 42C294642890EC49008A1276 /* Podfile */; };
+		42C2946728910137008A1276 /* API_Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C2946628910137008A1276 /* API_Request.swift */; };
+		42C29469289167B4008A1276 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C29468289167B4008A1276 /* HomeView.swift */; };
+		EE34444453434FE3A0DD19F5 /* Pods_Nano_Challenge_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB651992E79312453D894A56 /* Pods_Nano_Challenge_2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2554289F230F0B5D6F043F74 /* Pods-Nano_Challenge_2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nano_Challenge_2.release.xcconfig"; path = "Target Support Files/Pods-Nano_Challenge_2/Pods-Nano_Challenge_2.release.xcconfig"; sourceTree = "<group>"; };
 		42A75ED8288E3EFC000B600F /* Nano_Challenge_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano_Challenge_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A75EDB288E3EFC000B600F /* Nano_Challenge_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano_Challenge_2App.swift; sourceTree = "<group>"; };
 		42A75EDD288E3EFC000B600F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +31,15 @@
 		42A75EE2288E3EFD000B600F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		42A75EE4288E3EFD000B600F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		42A75EE7288E3EFD000B600F /* Nano_Challenge_2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nano_Challenge_2.xcdatamodel; sourceTree = "<group>"; };
+		42A75EEE288E4111000B600F /* Nano_Challenge_2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Nano_Challenge_2.entitlements; sourceTree = "<group>"; };
+		42A75EF0288E4129000B600F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		42A75EF4288E4BF5000B600F /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		42A75EF6288E4C16000B600F /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		42C294642890EC49008A1276 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		42C2946628910137008A1276 /* API_Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_Request.swift; sourceTree = "<group>"; };
+		42C29468289167B4008A1276 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		58A0DF98C7FB6DE20D4FD3CA /* Pods-Nano_Challenge_2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nano_Challenge_2.debug.xcconfig"; path = "Target Support Files/Pods-Nano_Challenge_2/Pods-Nano_Challenge_2.debug.xcconfig"; sourceTree = "<group>"; };
+		AB651992E79312453D894A56 /* Pods_Nano_Challenge_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nano_Challenge_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,17 +47,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A75EF1288E4129000B600F /* CloudKit.framework in Frameworks */,
+				EE34444453434FE3A0DD19F5 /* Pods_Nano_Challenge_2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E6550E9874A02A458960C19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58A0DF98C7FB6DE20D4FD3CA /* Pods-Nano_Challenge_2.debug.xcconfig */,
+				2554289F230F0B5D6F043F74 /* Pods-Nano_Challenge_2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		42A75ECF288E3EFC000B600F = {
 			isa = PBXGroup;
 			children = (
 				42A75EDA288E3EFC000B600F /* Nano_Challenge_2 */,
+				42C294642890EC49008A1276 /* Podfile */,
 				42A75ED9288E3EFC000B600F /* Products */,
+				42A75EEF288E4129000B600F /* Frameworks */,
+				2E6550E9874A02A458960C19 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,12 +86,17 @@
 		42A75EDA288E3EFC000B600F /* Nano_Challenge_2 */ = {
 			isa = PBXGroup;
 			children = (
+				42A75EEE288E4111000B600F /* Nano_Challenge_2.entitlements */,
 				42A75EDB288E3EFC000B600F /* Nano_Challenge_2App.swift */,
+				42C29468289167B4008A1276 /* HomeView.swift */,
+				42A75EF4288E4BF5000B600F /* ListView.swift */,
+				42A75EF6288E4C16000B600F /* AddView.swift */,
 				42A75EDD288E3EFC000B600F /* ContentView.swift */,
 				42A75EDF288E3EFD000B600F /* Assets.xcassets */,
 				42A75EE4288E3EFD000B600F /* Persistence.swift */,
 				42A75EE6288E3EFD000B600F /* Nano_Challenge_2.xcdatamodeld */,
 				42A75EE1288E3EFD000B600F /* Preview Content */,
+				42C2946628910137008A1276 /* API_Request.swift */,
 			);
 			path = Nano_Challenge_2;
 			sourceTree = "<group>";
@@ -73,6 +109,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		42A75EEF288E4129000B600F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42A75EF0288E4129000B600F /* CloudKit.framework */,
+				AB651992E79312453D894A56 /* Pods_Nano_Challenge_2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42A75EEB288E3EFD000B600F /* Build configuration list for PBXNativeTarget "Nano_Challenge_2" */;
 			buildPhases = (
+				DC2BDD42202F02ACD3A16986 /* [CP] Check Pods Manifest.lock */,
 				42A75ED4288E3EFC000B600F /* Sources */,
 				42A75ED5288E3EFC000B600F /* Frameworks */,
 				42A75ED6288E3EFC000B600F /* Resources */,
+				18EA197488315A0C461F7274 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,12 +178,55 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C294652890EC49008A1276 /* Podfile in Resources */,
 				42A75EE3288E3EFD000B600F /* Preview Assets.xcassets in Resources */,
 				42A75EE0288E3EFD000B600F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18EA197488315A0C461F7274 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nano_Challenge_2/Pods-Nano_Challenge_2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nano_Challenge_2/Pods-Nano_Challenge_2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nano_Challenge_2/Pods-Nano_Challenge_2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC2BDD42202F02ACD3A16986 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nano_Challenge_2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		42A75ED4288E3EFC000B600F /* Sources */ = {
@@ -145,6 +235,10 @@
 			files = (
 				42A75EE8288E3EFD000B600F /* Nano_Challenge_2.xcdatamodeld in Sources */,
 				42A75EE5288E3EFD000B600F /* Persistence.swift in Sources */,
+				42A75EF7288E4C16000B600F /* AddView.swift in Sources */,
+				42A75EF5288E4BF5000B600F /* ListView.swift in Sources */,
+				42C2946728910137008A1276 /* API_Request.swift in Sources */,
+				42C29469289167B4008A1276 /* HomeView.swift in Sources */,
 				42A75EDE288E3EFC000B600F /* ContentView.swift in Sources */,
 				42A75EDC288E3EFC000B600F /* Nano_Challenge_2App.swift in Sources */,
 			);
@@ -269,9 +363,11 @@
 		};
 		42A75EEC288E3EFD000B600F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58A0DF98C7FB6DE20D4FD3CA /* Pods-Nano_Challenge_2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Nano_Challenge_2/Nano_Challenge_2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nano_Challenge_2/Preview Content\"";
@@ -298,9 +394,11 @@
 		};
 		42A75EED288E3EFD000B600F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2554289F230F0B5D6F043F74 /* Pods-Nano_Challenge_2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Nano_Challenge_2/Nano_Challenge_2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nano_Challenge_2/Preview Content\"";
