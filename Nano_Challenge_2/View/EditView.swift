@@ -52,15 +52,31 @@ struct EditView: View {
                 Text("Learning Time")
             }
             Section {
-                Button("Mark as Done") {
-                    print("adsd")
+                HStack {
+                    Spacer()
+                    Button("Mark as Done") {
+                        print("Done")
+                    }
+                    .foregroundColor(Color.black)
+                    Spacer()
                 }
             }
+            .padding(.all)
+            .listRowInsets(EdgeInsets())
+            .background(Color(red: 109/255, green: 175/255, blue: 215/255))
             Section {
-                Button("Delete") {
-                    print("Delete")
+                HStack {
+                    Spacer()
+                    Button("Delete") {
+                        print("Delete")
+                    }
+                    .foregroundColor(Color(red: 25/255, green: 24/255, blue: 42/255))
+                    Spacer()
                 }
             }
+            .padding(.all)
+            .listRowInsets(EdgeInsets())
+            .background(Color(red: 255/255, green: 110/255, blue: 110/255))
         }
         .navigationTitle("Edit")
     }

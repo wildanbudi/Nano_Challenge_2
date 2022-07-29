@@ -22,7 +22,6 @@ struct ListView: View {
         NavigationView {
             Form {
                 NavigationLink(destination: EditView(Model: viewModel())) {
-//                    Section {
                         VStack(alignment: .leading, spacing: 20) {
                             Text("Design")
                             Text("Task 1")

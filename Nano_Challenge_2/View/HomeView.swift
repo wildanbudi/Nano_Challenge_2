@@ -30,24 +30,27 @@ struct HomeView: View {
                             ProgressView(value: 1)
                                 .progressViewStyle(LinearProgressViewStyle(tint: Color(UIColor(red: 48/255, green: 153/255, blue: 238/255, alpha: 255/255))))
                         }
+                        .padding(.vertical)
                         VStack {
                             HStack {
                                 Text("Design")
                                 Spacer()
-                                Text("0/1")
+                                Text("1/3")
                             }
-                            ProgressView(value: 0)
+                            ProgressView(value: 0.3)
                                 .progressViewStyle(LinearProgressViewStyle(tint: Color(UIColor(red: 255/255, green: 0/255, blue: 162/255, alpha: 255/255))))
                         }
+                        .padding(.vertical)
                         VStack {
                             HStack {
                                 Text("Pro Skill")
                                 Spacer()
-                                Text("0/0")
+                                Text("1/2")
                             }
-                            ProgressView(value: 0)
+                            ProgressView(value: 0.5)
                                 .progressViewStyle(LinearProgressViewStyle(tint: Color(UIColor(red: 112/255, green: 223/255, blue: 165/255, alpha: 255/255))))
                         }
+                        .padding(.vertical)
                     }
                 } header: {
                     Text("Achievement")
