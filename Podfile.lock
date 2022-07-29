@@ -1,0 +1,16 @@
+PODS:
+  - NotionClient (0.0.1)
+
+DEPENDENCIES:
+  - NotionClient (= 0.0.1)
+
+SPEC REPOS:
+  trunk:
+    - NotionClient
+
+SPEC CHECKSUMS:
+  NotionClient: 1e6af0df7b9fdcbe71ab6dbfb84873138396318a
+
+PODFILE CHECKSUM: 210c8cee7cc9d632a5ad1169d5802a006a732894
+
+COCOAPODS: 1.11.3

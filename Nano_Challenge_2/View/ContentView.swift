@@ -12,22 +12,23 @@ struct ContentView: View {
 
     var body: some View {
         TabView {
-            HomeView()
+            HomeView(dataModel: NotionViewModel())
             .tabItem{
-                Image(systemName: "1.square.fill")
+                Image(systemName: "book.closed.fill")
                 Text("Journey")
             }
-            ListView()
+            ListView(dataModel: NotionViewModel())
             .tabItem{
-                Image(systemName: "2.square.fill")
-                Text("Task")
+                Image(systemName: "list.bullet")
+                Text("Activity")
             }
         }
+        .onAppear(perform: NotionViewModel().getData)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView()
     }
 }

@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0267D9DE8A72FF103E6AB9F8A790F436 /* NotionTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 753922DF58F7461044FC4A60FBEBAA9A /* NotionTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03428C338483C9146F3F84BBD0EFE329 /* NotionPhoneProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F72D52E67F8E8ED7D06CD997D9EA48E /* NotionPhoneProperty.m */; };
+		0C31ADCD0F2DD1B2F0BAEB251C09F528 /* NotionNumberProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = C4926B7027C55E0D8823E68BAFE39EED /* NotionNumberProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12987EF0FD1290EAC7A6D77C7027A836 /* NotionUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB2AAA6C248544C8C11E827B70F7BD3 /* NotionUser.m */; };
+		1B855A831592D7E6F5D8C560475C9426 /* NotionURLProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 80E3873DD2B0BB7B1577F83CE46DB398 /* NotionURLProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		253DA22FA1C062630078F5C60FD6548A /* NotionRelationProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 26419DE5CA58E21FCA35F4C63903AFCD /* NotionRelationProperty.m */; };
+		28C517FAB8E5BB742C05FA4BDB7DBA66 /* NotionUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A797A787E508112E67F14A01F4CB525 /* NotionUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29FE1F08589047E6E5FAEC1061B49DA0 /* NotionMultiSelectProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 25FFA993B2C1CDE2A7832926AC31ED11 /* NotionMultiSelectProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C36F411788CF30BB7C425CBFD27A266 /* NotionClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B2FA8AD1E37B4FFCD8F35C9310D110 /* NotionClient-dummy.m */; };
+		3EAC1A0BE7157004DA2F6ACD46D79481 /* NotionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B413F7C727C9851428ABF1C69EADD7 /* NotionObject.m */; };
+		467AED3904625A5E10BF08806EDBFA7B /* NotionPage.h in Headers */ = {isa = PBXBuildFile; fileRef = EF9C11D8F6EF58E26D9919ACBB551EA1 /* NotionPage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A75C361536C6D01D7646D89A4016952 /* NotionCheckboxProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 882448D07B299BF38EF978AC0C596BFD /* NotionCheckboxProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52484C7426FDDEB5E13E847C0872E7DC /* NotionPhoneProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F155B97A197443AD5C0721997B6D2AA /* NotionPhoneProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63AF7572EBDAEAD71940319165E61511 /* NotionTextProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 24859B17BF5918B8F18980B02FF72777 /* NotionTextProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6579ABCDCC9C08EBD322846EFFC9BC69 /* NotionSelectProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CEB9CFBA719E991055414CE41FF8704 /* NotionSelectProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69D221B83D7CABB70B548D3BBAE8F71E /* NSDictionary+NotionClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EC55DB81F717587A89B37B38830F9DA0 /* NSDictionary+NotionClient.m */; };
+		6CDA8711CE28B574A59B40B0C8BFC18B /* NotionPersonProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C829AC0582F2B8E590DFABE1F89FA76 /* NotionPersonProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72F8DFC6D8195408A84D0C59CC1EF46D /* NotionCheckboxProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A7EF679EF0119CBB49AE8B7F1CF89C /* NotionCheckboxProperty.m */; };
+		7909D8C4E75EDDDF789579442246E1B5 /* NotionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 72614B2B51B902010B39AD9D37E85F03 /* NotionHelper.m */; };
+		7A646A34E8BD0B5460DFB45B5FAE33DE /* NotionClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1F97AF68B7A5E34C417B35355B1AB2 /* NotionClient.m */; };
+		7BE5B7BD4587F932260A6A41D84335C6 /* NotionDateProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = BC88A37CBCA272B864562D5C4F3D6482 /* NotionDateProperty.m */; };
+		89AD17934FC4F174783297985658241F /* NotionProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EB4A1F304DBDA95F6169265CB250E2B /* NotionProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A6B0C2813A82AB88E6DD19A9C12DA87 /* NotionRichText.m in Sources */ = {isa = PBXBuildFile; fileRef = B4013CD908CBCCBC6A5ADEF7D83C4C5D /* NotionRichText.m */; };
+		8B1397C20DB7FC83567573CF9220EFE7 /* NotionNumberProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A70C73679435887DACD58C1719231C /* NotionNumberProperty.m */; };
+		95BEA69654B191A25D5EE8751DB03708 /* NotionRichText.h in Headers */ = {isa = PBXBuildFile; fileRef = 48B5864034DD9225ADC9A80FF95E61BE /* NotionRichText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A14877D50089ED8115D16D94E4BF087 /* Pods-Nano_Challenge_2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56BA28AC113703AA38CBF261F26AF42F /* Pods-Nano_Challenge_2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1432F9D84441C3EF5E77AC66AFA90AE /* NotionEmailProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = ED14B5118275B45AB6F4FD4220F2BD4F /* NotionEmailProperty.m */; };
+		ABE9B51AAD241B2EB4CE90BAF5AFEF98 /* NotionHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E86A944524E91C56BE237A887B78BA /* NotionHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF0B79F4DDC010C6EC648BF3959625BA /* NotionClient.h in Headers */ = {isa = PBXBuildFile; fileRef = D359BEA56976043393364C7D5DC164E4 /* NotionClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAAAEAA2E7768641D2A32F481E79C5AD /* NotionRelationProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 606EEC97CAF905A9D6260F58D369880C /* NotionRelationProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD4202BF55E55346F670904D47675D11 /* NotionSelectProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7C9B1A0CB297D3E8593E52CF40B556 /* NotionSelectProperty.m */; };
+		C42C12CD3CA7CD8D8897E2377297EED3 /* NotionProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 387F37809206C8B18267C2871C1FFEE4 /* NotionProperty.m */; };
+		C99205A37B8787C9115726E14426BF7A /* NotionDateProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 9020C7D5B7AE8C1E78B9D58425D363AE /* NotionDateProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE361E471DC21075BCC845CAEC6AA03D /* Notion.h in Headers */ = {isa = PBXBuildFile; fileRef = F07B3E685B5BF89A349467B99501D0E2 /* Notion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D49A4DEB4EABE16BF93004B466FAD33E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DBFECEEB7091720FD45EF730F2736FE6 /* NotionEmailProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = BB9DBE474C689CD13AD9CDB53636C5CF /* NotionEmailProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE4EDD6BB682B0217E91DC4C50D6F440 /* NotionTextProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 897816124673FA72239736262C62C4B4 /* NotionTextProperty.m */; };
+		E19D87A1987A8462C0524054729ED733 /* NotionTextPart.h in Headers */ = {isa = PBXBuildFile; fileRef = 83AB2E40FAB23052B1E91AB72D56E604 /* NotionTextPart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4AF661EBE01A7528E5A1FEADF1FF8C1 /* NotionClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC87BA6899ABDCE47EA1677F7F19E65 /* NotionClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6BDB048E74DDA286B199BA615A97316 /* NotionTextPart.m in Sources */ = {isa = PBXBuildFile; fileRef = C64CD1636259FF2A32D172DDF81E0542 /* NotionTextPart.m */; };
+		E6D8F06E710D4E8971DDCF2B9866C288 /* NSDictionary+NotionClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 03379B9F243E089D872627B38D26628E /* NSDictionary+NotionClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E76D784A7A0AC7F56676A7B59329F56F /* NotionTitleProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = C476867AF75C499B7CAC8683CFB02C70 /* NotionTitleProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E99A8DFB8E32C774DA45CDA0050968A3 /* NotionSelectOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 259CA776C91E8D3AF68E6135E901A0F6 /* NotionSelectOption.m */; };
+		EA311C6BC431B517FAE38E238C3CDC82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		ECF0B61215CBC4AE3B64393EE5C5CC06 /* NotionPersonProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B24C61B0AFDE761788250E0F444E88AE /* NotionPersonProperty.m */; };
+		EDD86D3614D675894C952CDD58BBFAE7 /* NotionObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D5286DE8B82F357EB36CB54CBF52532E /* NotionObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F19C24013C4FFF6860023647F56230DD /* NotionPage.m in Sources */ = {isa = PBXBuildFile; fileRef = DD53446EA5737D27D209E99861EC292E /* NotionPage.m */; };
+		F89B503D8EB0EA2D479BF0A934883677 /* NotionURLProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 692C70442170667A12B96BDCCD08B03C /* NotionURLProperty.m */; };
+		FA1C4B8A944CF753D573BE63982C7171 /* NotionMultiSelectProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = BB64B666CCCB9669955D4CFBFCE1601A /* NotionMultiSelectProperty.m */; };
+		FC47486793B3B066D22F5391A439BCCD /* NotionTitleProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A65EB109C40B83D76E778CFDE546176 /* NotionTitleProperty.m */; };
+		FCDCB6FEFD1DC6BC311339269E45CDE3 /* NotionSelectOption.h in Headers */ = {isa = PBXBuildFile; fileRef = 61712430D09D1D8AE1FF59443BE30BB1 /* NotionSelectOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEA41A36C42F46B0298042A3498826BC /* Pods-Nano_Challenge_2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F3AECCCB02BA3BE6AEF7F50D0C89BB /* Pods-Nano_Challenge_2-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7226CCCF6B26EDE1195A3E9495A26F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24DBA3A0D054A49B014599425A8CE22E;
+			remoteInfo = NotionClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B413F7C727C9851428ABF1C69EADD7 /* NotionObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotionObject.m; path = Source/Classes/Objects/NotionObject.m; sourceTree = "<group>"; };
+		03379B9F243E089D872627B38D26628E /* NSDictionary+NotionClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+NotionClient.h"; path = "Source/Categories/NSDictionary+NotionClient.h"; sourceTree = "<group>"; };
+		033E52F2A01B4AC7375F1DD9CE301D69 /* Pods-Nano_Challenge_2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Nano_Challenge_2.release.xcconfig"; sourceTree = "<group>"; };
+		04F3AECCCB02BA3BE6AEF7F50D0C89BB /* Pods-Nano_Challenge_2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Nano_Challenge_2-dummy.m"; sourceTree = "<group>"; };
+		0EB4A1F304DBDA95F6169265CB250E2B /* NotionProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionProperty.h; path = Source/Classes/Properties/NotionProperty.h; sourceTree = "<group>"; };
+		1556E169F1A662680EA13E52E4FDE6BC /* NotionClient-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NotionClient-Info.plist"; sourceTree = "<group>"; };
+		1AAAB75FF09F5354A894CCF4441F4F0C /* NotionClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NotionClient-prefix.pch"; sourceTree = "<group>"; };
+		1AB2AAA6C248544C8C11E827B70F7BD3 /* NotionUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotionUser.m; path = Source/Classes/Objects/NotionUser.m; sourceTree = "<group>"; };
+		24859B17BF5918B8F18980B02FF72777 /* NotionTextProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionTextProperty.h; path = Source/Classes/Properties/NotionTextProperty.h; sourceTree = "<group>"; };
+		259CA776C91E8D3AF68E6135E901A0F6 /* NotionSelectOption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotionSelectOption.m; path = Source/Classes/Properties/NotionSelectOption.m; sourceTree = "<group>"; };
+		25FFA993B2C1CDE2A7832926AC31ED11 /* NotionMultiSelectProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionMultiSelectProperty.h; path = Source/Classes/Properties/NotionMultiSelectProperty.h; sourceTree = "<group>"; };
+		263BB058226BEE2BD3DC9AB90C86260A /* Pods-Nano_Challenge_2 */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Nano_Challenge_2"; path = Pods_Nano_Challenge_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26419DE5CA58E21FCA35F4C63903AFCD /* NotionRelationProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotionRelationProperty.m; path = Source/Classes/Properties/NotionRelationProperty.m; sourceTree = "<group>"; };
+		2A6EA21A64BB0DF42FBFD53ED424A46E /* NotionClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NotionClient.modulemap; sourceTree = "<group>"; };
+		387F37809206C8B18267C2871C1FFEE4 /* NotionProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotionProperty.m; path = Source/Classes/Properties/NotionProperty.m; sourceTree = "<group>"; };
+		39B2FA8AD1E37B4FFCD8F35C9310D110 /* NotionClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NotionClient-dummy.m"; sourceTree = "<group>"; };
+		3DC87BA6899ABDCE47EA1677F7F19E65 /* NotionClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NotionClient-umbrella.h"; sourceTree = "<group>"; };
+		3E1F97AF68B7A5E34C417B35355B1AB2 /* NotionClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotionClient.m; path = Source/Classes/NotionClient.m; sourceTree = "<group>"; };
+		48B5864034DD9225ADC9A80FF95E61BE /* NotionRichText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionRichText.h; path = Source/Classes/RichText/NotionRichText.h; sourceTree = "<group>"; };
+		50A70C73679435887DACD58C1719231C /* NotionNumberProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotionNumberProperty.m; path = Source/Classes/Properties/NotionNumberProperty.m; sourceTree = "<group>"; };
+		56BA28AC113703AA38CBF261F26AF42F /* Pods-Nano_Challenge_2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Nano_Challenge_2-umbrella.h"; sourceTree = "<group>"; };
+		5A65EB109C40B83D76E778CFDE546176 /* NotionTitleProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotionTitleProperty.m; path = Source/Classes/Properties/NotionTitleProperty.m; sourceTree = "<group>"; };
+		606EEC97CAF905A9D6260F58D369880C /* NotionRelationProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionRelationProperty.h; path = Source/Classes/Properties/NotionRelationProperty.h; sourceTree = "<group>"; };
+		61712430D09D1D8AE1FF59443BE30BB1 /* NotionSelectOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionSelectOption.h; path = Source/Classes/Properties/NotionSelectOption.h; sourceTree = "<group>"; };
+		635849DB03A42E39989C518B84BE8024 /* Pods-Nano_Challenge_2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Nano_Challenge_2.debug.xcconfig"; sourceTree = "<group>"; };
+		692C70442170667A12B96BDCCD08B03C /* NotionURLProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotionURLProperty.m; path = Source/Classes/Properties/NotionURLProperty.m; sourceTree = "<group>"; };
+		72614B2B51B902010B39AD9D37E85F03 /* NotionHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotionHelper.m; path = Source/Classes/Misc/NotionHelper.m; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		753922DF58F7461044FC4A60FBEBAA9A /* NotionTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionTypes.h; path = Source/Classes/Misc/NotionTypes.h; sourceTree = "<group>"; };
+		7F72D52E67F8E8ED7D06CD997D9EA48E /* NotionPhoneProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotionPhoneProperty.m; path = Source/Classes/Properties/NotionPhoneProperty.m; sourceTree = "<group>"; };
+		80E3873DD2B0BB7B1577F83CE46DB398 /* NotionURLProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionURLProperty.h; path = Source/Classes/Properties/NotionURLProperty.h; sourceTree = "<group>"; };
+		83AB2E40FAB23052B1E91AB72D56E604 /* NotionTextPart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionTextPart.h; path = Source/Classes/RichText/NotionTextPart.h; sourceTree = "<group>"; };
+		882448D07B299BF38EF978AC0C596BFD /* NotionCheckboxProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionCheckboxProperty.h; path = Source/Classes/Properties/NotionCheckboxProperty.h; sourceTree = "<group>"; };
+		897816124673FA72239736262C62C4B4 /* NotionTextProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotionTextProperty.m; path = Source/Classes/Properties/NotionTextProperty.m; sourceTree = "<group>"; };
+		8A797A787E508112E67F14A01F4CB525 /* NotionUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionUser.h; path = Source/Classes/Objects/NotionUser.h; sourceTree = "<group>"; };
+		8C829AC0582F2B8E590DFABE1F89FA76 /* NotionPersonProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionPersonProperty.h; path = Source/Classes/Properties/NotionPersonProperty.h; sourceTree = "<group>"; };
+		8F155B97A197443AD5C0721997B6D2AA /* NotionPhoneProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionPhoneProperty.h; path = Source/Classes/Properties/NotionPhoneProperty.h; sourceTree = "<group>"; };
+		9020C7D5B7AE8C1E78B9D58425D363AE /* NotionDateProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionDateProperty.h; path = Source/Classes/Properties/NotionDateProperty.h; sourceTree = "<group>"; };
+		9B804A318D256EEA1BF5A2D1ADA6C426 /* NotionClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NotionClient.debug.xcconfig; sourceTree = "<group>"; };
+		9CEB9CFBA719E991055414CE41FF8704 /* NotionSelectProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionSelectProperty.h; path = Source/Classes/Properties/NotionSelectProperty.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B24C61B0AFDE761788250E0F444E88AE /* NotionPersonProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotionPersonProperty.m; path = Source/Classes/Properties/NotionPersonProperty.m; sourceTree = "<group>"; };
+		B4013CD908CBCCBC6A5ADEF7D83C4C5D /* NotionRichText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotionRichText.m; path = Source/Classes/RichText/NotionRichText.m; sourceTree = "<group>"; };
+		BB64B666CCCB9669955D4CFBFCE1601A /* NotionMultiSelectProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotionMultiSelectProperty.m; path = Source/Classes/Properties/NotionMultiSelectProperty.m; sourceTree = "<group>"; };
+		BB9DBE474C689CD13AD9CDB53636C5CF /* NotionEmailProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionEmailProperty.h; path = Source/Classes/Properties/NotionEmailProperty.h; sourceTree = "<group>"; };
+		BC88A37CBCA272B864562D5C4F3D6482 /* NotionDateProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotionDateProperty.m; path = Source/Classes/Properties/NotionDateProperty.m; sourceTree = "<group>"; };
+		C44AEC3FA04B9C6C864E4C69EC59088C /* Pods-Nano_Challenge_2-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Nano_Challenge_2-Info.plist"; sourceTree = "<group>"; };
+		C44FEAD8EA58FC245B2B0D8CE2C32636 /* Pods-Nano_Challenge_2-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Nano_Challenge_2-frameworks.sh"; sourceTree = "<group>"; };
+		C476867AF75C499B7CAC8683CFB02C70 /* NotionTitleProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionTitleProperty.h; path = Source/Classes/Properties/NotionTitleProperty.h; sourceTree = "<group>"; };
+		C4926B7027C55E0D8823E68BAFE39EED /* NotionNumberProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionNumberProperty.h; path = Source/Classes/Properties/NotionNumberProperty.h; sourceTree = "<group>"; };
+		C60DCF64456A26B1B73676131298A46E /* NotionClient */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NotionClient; path = NotionClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C64CD1636259FF2A32D172DDF81E0542 /* NotionTextPart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotionTextPart.m; path = Source/Classes/RichText/NotionTextPart.m; sourceTree = "<group>"; };
+		C65C8BF3CA0ECF48B5ED6FB3341DCE44 /* Pods-Nano_Challenge_2-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Nano_Challenge_2-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CFC6253ACAC46CF535D3736D05D1D80D /* NotionClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NotionClient.release.xcconfig; sourceTree = "<group>"; };
+		D359BEA56976043393364C7D5DC164E4 /* NotionClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionClient.h; path = Source/Classes/NotionClient.h; sourceTree = "<group>"; };
+		D5286DE8B82F357EB36CB54CBF52532E /* NotionObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionObject.h; path = Source/Classes/Objects/NotionObject.h; sourceTree = "<group>"; };
+		D8A7EF679EF0119CBB49AE8B7F1CF89C /* NotionCheckboxProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotionCheckboxProperty.m; path = Source/Classes/Properties/NotionCheckboxProperty.m; sourceTree = "<group>"; };
+		DA029FE2C4F5ACD4CD722A4AC45AFA5C /* Pods-Nano_Challenge_2-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Nano_Challenge_2-acknowledgements.plist"; sourceTree = "<group>"; };
+		DD53446EA5737D27D209E99861EC292E /* NotionPage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotionPage.m; path = Source/Classes/Objects/NotionPage.m; sourceTree = "<group>"; };
+		DF7C9B1A0CB297D3E8593E52CF40B556 /* NotionSelectProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotionSelectProperty.m; path = Source/Classes/Properties/NotionSelectProperty.m; sourceTree = "<group>"; };
+		E2E86A944524E91C56BE237A887B78BA /* NotionHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionHelper.h; path = Source/Classes/Misc/NotionHelper.h; sourceTree = "<group>"; };
+		EC55DB81F717587A89B37B38830F9DA0 /* NSDictionary+NotionClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+NotionClient.m"; path = "Source/Categories/NSDictionary+NotionClient.m"; sourceTree = "<group>"; };
+		ED14B5118275B45AB6F4FD4220F2BD4F /* NotionEmailProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NotionEmailProperty.m; path = Source/Classes/Properties/NotionEmailProperty.m; sourceTree = "<group>"; };
+		EF9C11D8F6EF58E26D9919ACBB551EA1 /* NotionPage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NotionPage.h; path = Source/Classes/Objects/NotionPage.h; sourceTree = "<group>"; };
+		F07B3E685B5BF89A349467B99501D0E2 /* Notion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Notion.h; path = Source/Notion.h; sourceTree = "<group>"; };
+		F7DE5345CD40ABAC91D01342EE11A177 /* Pods-Nano_Challenge_2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Nano_Challenge_2.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35FB390C1AF80DCD7D639C23BD6D7D68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA311C6BC431B517FAE38E238C3CDC82 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D6AA8FA8FD04C06C4714E862EC88555 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D49A4DEB4EABE16BF93004B466FAD33E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FFBEC3A111624EE86C58DC60F90F1A1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A6EA21A64BB0DF42FBFD53ED424A46E /* NotionClient.modulemap */,
+				39B2FA8AD1E37B4FFCD8F35C9310D110 /* NotionClient-dummy.m */,
+				1556E169F1A662680EA13E52E4FDE6BC /* NotionClient-Info.plist */,
+				1AAAB75FF09F5354A894CCF4441F4F0C /* NotionClient-prefix.pch */,
+				3DC87BA6899ABDCE47EA1677F7F19E65 /* NotionClient-umbrella.h */,
+				9B804A318D256EEA1BF5A2D1ADA6C426 /* NotionClient.debug.xcconfig */,
+				CFC6253ACAC46CF535D3736D05D1D80D /* NotionClient.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NotionClient";
+			sourceTree = "<group>";
+		};
+		5274038D7DB623164E4E6129D59E179E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F79FF92C4998C27C7E963EFF655A61C1 /* Pods-Nano_Challenge_2 */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5B1067CCE1C215D42744394644A3A5B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C60DCF64456A26B1B73676131298A46E /* NotionClient */,
+				263BB058226BEE2BD3DC9AB90C86260A /* Pods-Nano_Challenge_2 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7972995C771FBD470C0F101D4A544D29 /* NotionClient */ = {
+			isa = PBXGroup;
+			children = (
+				F07B3E685B5BF89A349467B99501D0E2 /* Notion.h */,
+				882448D07B299BF38EF978AC0C596BFD /* NotionCheckboxProperty.h */,
+				D8A7EF679EF0119CBB49AE8B7F1CF89C /* NotionCheckboxProperty.m */,
+				D359BEA56976043393364C7D5DC164E4 /* NotionClient.h */,
+				3E1F97AF68B7A5E34C417B35355B1AB2 /* NotionClient.m */,
+				9020C7D5B7AE8C1E78B9D58425D363AE /* NotionDateProperty.h */,
+				BC88A37CBCA272B864562D5C4F3D6482 /* NotionDateProperty.m */,
+				BB9DBE474C689CD13AD9CDB53636C5CF /* NotionEmailProperty.h */,
+				ED14B5118275B45AB6F4FD4220F2BD4F /* NotionEmailProperty.m */,
+				E2E86A944524E91C56BE237A887B78BA /* NotionHelper.h */,
+				72614B2B51B902010B39AD9D37E85F03 /* NotionHelper.m */,
+				25FFA993B2C1CDE2A7832926AC31ED11 /* NotionMultiSelectProperty.h */,
+				BB64B666CCCB9669955D4CFBFCE1601A /* NotionMultiSelectProperty.m */,
+				C4926B7027C55E0D8823E68BAFE39EED /* NotionNumberProperty.h */,
+				50A70C73679435887DACD58C1719231C /* NotionNumberProperty.m */,
+				D5286DE8B82F357EB36CB54CBF52532E /* NotionObject.h */,
+				02B413F7C727C9851428ABF1C69EADD7 /* NotionObject.m */,
+				EF9C11D8F6EF58E26D9919ACBB551EA1 /* NotionPage.h */,
+				DD53446EA5737D27D209E99861EC292E /* NotionPage.m */,
+				8C829AC0582F2B8E590DFABE1F89FA76 /* NotionPersonProperty.h */,
+				B24C61B0AFDE761788250E0F444E88AE /* NotionPersonProperty.m */,
+				8F155B97A197443AD5C0721997B6D2AA /* NotionPhoneProperty.h */,
+				7F72D52E67F8E8ED7D06CD997D9EA48E /* NotionPhoneProperty.m */,
+				0EB4A1F304DBDA95F6169265CB250E2B /* NotionProperty.h */,
+				387F37809206C8B18267C2871C1FFEE4 /* NotionProperty.m */,
+				606EEC97CAF905A9D6260F58D369880C /* NotionRelationProperty.h */,
+				26419DE5CA58E21FCA35F4C63903AFCD /* NotionRelationProperty.m */,
+				48B5864034DD9225ADC9A80FF95E61BE /* NotionRichText.h */,
+				B4013CD908CBCCBC6A5ADEF7D83C4C5D /* NotionRichText.m */,
+				61712430D09D1D8AE1FF59443BE30BB1 /* NotionSelectOption.h */,
+				259CA776C91E8D3AF68E6135E901A0F6 /* NotionSelectOption.m */,
+				9CEB9CFBA719E991055414CE41FF8704 /* NotionSelectProperty.h */,
+				DF7C9B1A0CB297D3E8593E52CF40B556 /* NotionSelectProperty.m */,
+				83AB2E40FAB23052B1E91AB72D56E604 /* NotionTextPart.h */,
+				C64CD1636259FF2A32D172DDF81E0542 /* NotionTextPart.m */,
+				24859B17BF5918B8F18980B02FF72777 /* NotionTextProperty.h */,
+				897816124673FA72239736262C62C4B4 /* NotionTextProperty.m */,
+				C476867AF75C499B7CAC8683CFB02C70 /* NotionTitleProperty.h */,
+				5A65EB109C40B83D76E778CFDE546176 /* NotionTitleProperty.m */,
+				753922DF58F7461044FC4A60FBEBAA9A /* NotionTypes.h */,
+				80E3873DD2B0BB7B1577F83CE46DB398 /* NotionURLProperty.h */,
+				692C70442170667A12B96BDCCD08B03C /* NotionURLProperty.m */,
+				8A797A787E508112E67F14A01F4CB525 /* NotionUser.h */,
+				1AB2AAA6C248544C8C11E827B70F7BD3 /* NotionUser.m */,
+				03379B9F243E089D872627B38D26628E /* NSDictionary+NotionClient.h */,
+				EC55DB81F717587A89B37B38830F9DA0 /* NSDictionary+NotionClient.m */,
+				0FFBEC3A111624EE86C58DC60F90F1A1 /* Support Files */,
+			);
+			name = NotionClient;
+			path = NotionClient;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E11309D3DDE835CD5B0F728D4751FC4D /* Pods */,
+				5B1067CCE1C215D42744394644A3A5B9 /* Products */,
+				5274038D7DB623164E4E6129D59E179E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E11309D3DDE835CD5B0F728D4751FC4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7972995C771FBD470C0F101D4A544D29 /* NotionClient */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F79FF92C4998C27C7E963EFF655A61C1 /* Pods-Nano_Challenge_2 */ = {
+			isa = PBXGroup;
+			children = (
+				F7DE5345CD40ABAC91D01342EE11A177 /* Pods-Nano_Challenge_2.modulemap */,
+				C65C8BF3CA0ECF48B5ED6FB3341DCE44 /* Pods-Nano_Challenge_2-acknowledgements.markdown */,
+				DA029FE2C4F5ACD4CD722A4AC45AFA5C /* Pods-Nano_Challenge_2-acknowledgements.plist */,
+				04F3AECCCB02BA3BE6AEF7F50D0C89BB /* Pods-Nano_Challenge_2-dummy.m */,
+				C44FEAD8EA58FC245B2B0D8CE2C32636 /* Pods-Nano_Challenge_2-frameworks.sh */,
+				C44AEC3FA04B9C6C864E4C69EC59088C /* Pods-Nano_Challenge_2-Info.plist */,
+				56BA28AC113703AA38CBF261F26AF42F /* Pods-Nano_Challenge_2-umbrella.h */,
+				635849DB03A42E39989C518B84BE8024 /* Pods-Nano_Challenge_2.debug.xcconfig */,
+				033E52F2A01B4AC7375F1DD9CE301D69 /* Pods-Nano_Challenge_2.release.xcconfig */,
+			);
+			name = "Pods-Nano_Challenge_2";
+			path = "Target Support Files/Pods-Nano_Challenge_2";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2814A8AAE9EC6BA727796712D451617D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE361E471DC21075BCC845CAEC6AA03D /* Notion.h in Headers */,
+				4A75C361536C6D01D7646D89A4016952 /* NotionCheckboxProperty.h in Headers */,
+				AF0B79F4DDC010C6EC648BF3959625BA /* NotionClient.h in Headers */,
+				E4AF661EBE01A7528E5A1FEADF1FF8C1 /* NotionClient-umbrella.h in Headers */,
+				C99205A37B8787C9115726E14426BF7A /* NotionDateProperty.h in Headers */,
+				DBFECEEB7091720FD45EF730F2736FE6 /* NotionEmailProperty.h in Headers */,
+				ABE9B51AAD241B2EB4CE90BAF5AFEF98 /* NotionHelper.h in Headers */,
+				29FE1F08589047E6E5FAEC1061B49DA0 /* NotionMultiSelectProperty.h in Headers */,
+				0C31ADCD0F2DD1B2F0BAEB251C09F528 /* NotionNumberProperty.h in Headers */,
+				EDD86D3614D675894C952CDD58BBFAE7 /* NotionObject.h in Headers */,
+				467AED3904625A5E10BF08806EDBFA7B /* NotionPage.h in Headers */,
+				6CDA8711CE28B574A59B40B0C8BFC18B /* NotionPersonProperty.h in Headers */,
+				52484C7426FDDEB5E13E847C0872E7DC /* NotionPhoneProperty.h in Headers */,
+				89AD17934FC4F174783297985658241F /* NotionProperty.h in Headers */,
+				BAAAEAA2E7768641D2A32F481E79C5AD /* NotionRelationProperty.h in Headers */,
+				95BEA69654B191A25D5EE8751DB03708 /* NotionRichText.h in Headers */,
+				FCDCB6FEFD1DC6BC311339269E45CDE3 /* NotionSelectOption.h in Headers */,
+				6579ABCDCC9C08EBD322846EFFC9BC69 /* NotionSelectProperty.h in Headers */,
+				E19D87A1987A8462C0524054729ED733 /* NotionTextPart.h in Headers */,
+				63AF7572EBDAEAD71940319165E61511 /* NotionTextProperty.h in Headers */,
+				E76D784A7A0AC7F56676A7B59329F56F /* NotionTitleProperty.h in Headers */,
+				0267D9DE8A72FF103E6AB9F8A790F436 /* NotionTypes.h in Headers */,
+				1B855A831592D7E6F5D8C560475C9426 /* NotionURLProperty.h in Headers */,
+				28C517FAB8E5BB742C05FA4BDB7DBA66 /* NotionUser.h in Headers */,
+				E6D8F06E710D4E8971DDCF2B9866C288 /* NSDictionary+NotionClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7BBE4D8B9E87F6D90CC20F7E8F35840 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A14877D50089ED8115D16D94E4BF087 /* Pods-Nano_Challenge_2-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		24DBA3A0D054A49B014599425A8CE22E /* NotionClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67AD1ADF570946022CD7E1ACA2104510 /* Build configuration list for PBXNativeTarget "NotionClient" */;
+			buildPhases = (
+				2814A8AAE9EC6BA727796712D451617D /* Headers */,
+				76EE74F3662BC958A953DA5669AA50E4 /* Sources */,
+				35FB390C1AF80DCD7D639C23BD6D7D68 /* Frameworks */,
+				2F64EB21652D3BD9C0343D6B3C0864F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotionClient;
+			productName = NotionClient;
+			productReference = C60DCF64456A26B1B73676131298A46E /* NotionClient */;
+			productType = "com.apple.product-type.framework";
+		};
+		9DAB5E4D048427AD6755D2E969702137 /* Pods-Nano_Challenge_2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 160810B4911000CE5D8741A5B661DD7F /* Build configuration list for PBXNativeTarget "Pods-Nano_Challenge_2" */;
+			buildPhases = (
+				B7BBE4D8B9E87F6D90CC20F7E8F35840 /* Headers */,
+				CA3185C2396D0EDE201B20E0A7840C7C /* Sources */,
+				8D6AA8FA8FD04C06C4714E862EC88555 /* Frameworks */,
+				C84F1E3FB73E18FC239E8CCB67DDF5A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01129B450B22FE7EAE8C2C674B03C440 /* PBXTargetDependency */,
+			);
+			name = "Pods-Nano_Challenge_2";
+			productName = Pods_Nano_Challenge_2;
+			productReference = 263BB058226BEE2BD3DC9AB90C86260A /* Pods-Nano_Challenge_2 */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 5B1067CCE1C215D42744394644A3A5B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24DBA3A0D054A49B014599425A8CE22E /* NotionClient */,
+				9DAB5E4D048427AD6755D2E969702137 /* Pods-Nano_Challenge_2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F64EB21652D3BD9C0343D6B3C0864F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C84F1E3FB73E18FC239E8CCB67DDF5A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76EE74F3662BC958A953DA5669AA50E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72F8DFC6D8195408A84D0C59CC1EF46D /* NotionCheckboxProperty.m in Sources */,
+				7A646A34E8BD0B5460DFB45B5FAE33DE /* NotionClient.m in Sources */,
+				2C36F411788CF30BB7C425CBFD27A266 /* NotionClient-dummy.m in Sources */,
+				7BE5B7BD4587F932260A6A41D84335C6 /* NotionDateProperty.m in Sources */,
+				A1432F9D84441C3EF5E77AC66AFA90AE /* NotionEmailProperty.m in Sources */,
+				7909D8C4E75EDDDF789579442246E1B5 /* NotionHelper.m in Sources */,
+				FA1C4B8A944CF753D573BE63982C7171 /* NotionMultiSelectProperty.m in Sources */,
+				8B1397C20DB7FC83567573CF9220EFE7 /* NotionNumberProperty.m in Sources */,
+				3EAC1A0BE7157004DA2F6ACD46D79481 /* NotionObject.m in Sources */,
+				F19C24013C4FFF6860023647F56230DD /* NotionPage.m in Sources */,
+				ECF0B61215CBC4AE3B64393EE5C5CC06 /* NotionPersonProperty.m in Sources */,
+				03428C338483C9146F3F84BBD0EFE329 /* NotionPhoneProperty.m in Sources */,
+				C42C12CD3CA7CD8D8897E2377297EED3 /* NotionProperty.m in Sources */,
+				253DA22FA1C062630078F5C60FD6548A /* NotionRelationProperty.m in Sources */,
+				8A6B0C2813A82AB88E6DD19A9C12DA87 /* NotionRichText.m in Sources */,
+				E99A8DFB8E32C774DA45CDA0050968A3 /* NotionSelectOption.m in Sources */,
+				BD4202BF55E55346F670904D47675D11 /* NotionSelectProperty.m in Sources */,
+				E6BDB048E74DDA286B199BA615A97316 /* NotionTextPart.m in Sources */,
+				DE4EDD6BB682B0217E91DC4C50D6F440 /* NotionTextProperty.m in Sources */,
+				FC47486793B3B066D22F5391A439BCCD /* NotionTitleProperty.m in Sources */,
+				F89B503D8EB0EA2D479BF0A934883677 /* NotionURLProperty.m in Sources */,
+				12987EF0FD1290EAC7A6D77C7027A836 /* NotionUser.m in Sources */,
+				69D221B83D7CABB70B548D3BBAE8F71E /* NSDictionary+NotionClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA3185C2396D0EDE201B20E0A7840C7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEA41A36C42F46B0298042A3498826BC /* Pods-Nano_Challenge_2-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01129B450B22FE7EAE8C2C674B03C440 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NotionClient;
+			target = 24DBA3A0D054A49B014599425A8CE22E /* NotionClient */;
+			targetProxy = A7226CCCF6B26EDE1195A3E9495A26F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02F8184F86058ECE3FDE0A76A95724F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFC6253ACAC46CF535D3736D05D1D80D /* NotionClient.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NotionClient/NotionClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NotionClient/NotionClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NotionClient/NotionClient.modulemap";
+				PRODUCT_MODULE_NAME = NotionClient;
+				PRODUCT_NAME = NotionClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3691A3E46FFC4487FBDEE52D94D1B2DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 033E52F2A01B4AC7375F1DD9CE301D69 /* Pods-Nano_Challenge_2.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Nano_Challenge_2/Pods-Nano_Challenge_2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Nano_Challenge_2/Pods-Nano_Challenge_2.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5FDA2EE0CA5ED1F2C009DB5B71804EBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 635849DB03A42E39989C518B84BE8024 /* Pods-Nano_Challenge_2.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Nano_Challenge_2/Pods-Nano_Challenge_2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Nano_Challenge_2/Pods-Nano_Challenge_2.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		92486E5E72E54FAF60E1A7D022C21B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		934ED2B84836A780113D1F63484628B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DD1B91B5C0DA132F61C1BF100E8AB3A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B804A318D256EEA1BF5A2D1ADA6C426 /* NotionClient.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NotionClient/NotionClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NotionClient/NotionClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NotionClient/NotionClient.modulemap";
+				PRODUCT_MODULE_NAME = NotionClient;
+				PRODUCT_NAME = NotionClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		160810B4911000CE5D8741A5B661DD7F /* Build configuration list for PBXNativeTarget "Pods-Nano_Challenge_2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FDA2EE0CA5ED1F2C009DB5B71804EBB /* Debug */,
+				3691A3E46FFC4487FBDEE52D94D1B2DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				934ED2B84836A780113D1F63484628B2 /* Debug */,
+				92486E5E72E54FAF60E1A7D022C21B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67AD1ADF570946022CD7E1ACA2104510 /* Build configuration list for PBXNativeTarget "NotionClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD1B91B5C0DA132F61C1BF100E8AB3A6 /* Debug */,
+				02F8184F86058ECE3FDE0A76A95724F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

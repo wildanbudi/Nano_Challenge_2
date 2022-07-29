@@ -17,8 +17,11 @@
 		42A75EF5288E4BF5000B600F /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A75EF4288E4BF5000B600F /* ListView.swift */; };
 		42A75EF7288E4C16000B600F /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A75EF6288E4C16000B600F /* AddView.swift */; };
 		42C294652890EC49008A1276 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 42C294642890EC49008A1276 /* Podfile */; };
-		42C2946728910137008A1276 /* API_Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C2946628910137008A1276 /* API_Request.swift */; };
 		42C29469289167B4008A1276 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C29468289167B4008A1276 /* HomeView.swift */; };
+		42C2946D28923E7C008A1276 /* NotionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C2946C28923E7C008A1276 /* NotionViewModel.swift */; };
+		42C2947128924556008A1276 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C2947028924556008A1276 /* APIHelper.swift */; };
+		42C29473289258A9008A1276 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C29472289258A9008A1276 /* DataModel.swift */; };
+		42E73FAE2892DAB7007FBCB1 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E73FAD2892DAB7007FBCB1 /* EditView.swift */; };
 		EE34444453434FE3A0DD19F5 /* Pods_Nano_Challenge_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB651992E79312453D894A56 /* Pods_Nano_Challenge_2.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,8 +39,11 @@
 		42A75EF4288E4BF5000B600F /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		42A75EF6288E4C16000B600F /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		42C294642890EC49008A1276 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		42C2946628910137008A1276 /* API_Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_Request.swift; sourceTree = "<group>"; };
 		42C29468289167B4008A1276 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		42C2946C28923E7C008A1276 /* NotionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotionViewModel.swift; sourceTree = "<group>"; };
+		42C2947028924556008A1276 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		42C29472289258A9008A1276 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		42E73FAD2892DAB7007FBCB1 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		58A0DF98C7FB6DE20D4FD3CA /* Pods-Nano_Challenge_2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nano_Challenge_2.debug.xcconfig"; path = "Target Support Files/Pods-Nano_Challenge_2/Pods-Nano_Challenge_2.debug.xcconfig"; sourceTree = "<group>"; };
 		AB651992E79312453D894A56 /* Pods_Nano_Challenge_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nano_Challenge_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -88,15 +94,13 @@
 			children = (
 				42A75EEE288E4111000B600F /* Nano_Challenge_2.entitlements */,
 				42A75EDB288E3EFC000B600F /* Nano_Challenge_2App.swift */,
-				42C29468289167B4008A1276 /* HomeView.swift */,
-				42A75EF4288E4BF5000B600F /* ListView.swift */,
-				42A75EF6288E4C16000B600F /* AddView.swift */,
-				42A75EDD288E3EFC000B600F /* ContentView.swift */,
+				42C2946F289243C0008A1276 /* ViewModel */,
+				42C2946E289243B5008A1276 /* View */,
 				42A75EDF288E3EFD000B600F /* Assets.xcassets */,
 				42A75EE4288E3EFD000B600F /* Persistence.swift */,
+				42C2947028924556008A1276 /* APIHelper.swift */,
 				42A75EE6288E3EFD000B600F /* Nano_Challenge_2.xcdatamodeld */,
 				42A75EE1288E3EFD000B600F /* Preview Content */,
-				42C2946628910137008A1276 /* API_Request.swift */,
 			);
 			path = Nano_Challenge_2;
 			sourceTree = "<group>";
@@ -116,6 +120,27 @@
 				AB651992E79312453D894A56 /* Pods_Nano_Challenge_2.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42C2946E289243B5008A1276 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42C29468289167B4008A1276 /* HomeView.swift */,
+				42A75EF4288E4BF5000B600F /* ListView.swift */,
+				42A75EF6288E4C16000B600F /* AddView.swift */,
+				42E73FAD2892DAB7007FBCB1 /* EditView.swift */,
+				42A75EDD288E3EFC000B600F /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42C2946F289243C0008A1276 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				42C2946C28923E7C008A1276 /* NotionViewModel.swift */,
+				42C29472289258A9008A1276 /* DataModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,11 +258,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C2947128924556008A1276 /* APIHelper.swift in Sources */,
 				42A75EE8288E3EFD000B600F /* Nano_Challenge_2.xcdatamodeld in Sources */,
+				42E73FAE2892DAB7007FBCB1 /* EditView.swift in Sources */,
+				42C2946D28923E7C008A1276 /* NotionViewModel.swift in Sources */,
 				42A75EE5288E3EFD000B600F /* Persistence.swift in Sources */,
 				42A75EF7288E4C16000B600F /* AddView.swift in Sources */,
+				42C29473289258A9008A1276 /* DataModel.swift in Sources */,
 				42A75EF5288E4BF5000B600F /* ListView.swift in Sources */,
-				42C2946728910137008A1276 /* API_Request.swift in Sources */,
 				42C29469289167B4008A1276 /* HomeView.swift in Sources */,
 				42A75EDE288E3EFC000B600F /* ContentView.swift in Sources */,
 				42A75EDC288E3EFC000B600F /* Nano_Challenge_2App.swift in Sources */,

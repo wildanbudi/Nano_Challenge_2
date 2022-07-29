@@ -14,6 +14,7 @@ struct HomeView: View {
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
+    @StateObject var dataModel: NotionViewModel
     
     var body: some View {
         NavigationView {
@@ -24,27 +25,28 @@ struct HomeView: View {
                             HStack {
                                 Text("Tech")
                                 Spacer()
-                                Text("4/8")
+                                Text("1/1")
                             }
-                            ProgressView(value: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/)
-                                .progressViewStyle(LinearProgressViewStyle(tint: Color.yellow))
+                            ProgressView(value: 1)
+                                .progressViewStyle(LinearProgressViewStyle(tint: Color(UIColor(red: 48/255, green: 153/255, blue: 238/255, alpha: 255/255))))
                         }
                         VStack {
                             HStack {
                                 Text("Design")
                                 Spacer()
-                                Text("4/8")
+                                Text("0/1")
                             }
-                            ProgressView(value: 0.5)
-                                .progressViewStyle(LinearProgressViewStyle(tint: Color.green))
+                            ProgressView(value: 0)
+                                .progressViewStyle(LinearProgressViewStyle(tint: Color(UIColor(red: 255/255, green: 0/255, blue: 162/255, alpha: 255/255))))
                         }
                         VStack {
                             HStack {
                                 Text("Pro Skill")
                                 Spacer()
-                                Text("4/8")
+                                Text("0/0")
                             }
-                            ProgressView(value: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/)
+                            ProgressView(value: 0)
+                                .progressViewStyle(LinearProgressViewStyle(tint: Color(UIColor(red: 112/255, green: 223/255, blue: 165/255, alpha: 255/255))))
                         }
                     }
                 } header: {
@@ -61,30 +63,31 @@ struct HomeView: View {
                 } header: {
                     Text("Today's Learning")
                 }
-                Section {
-                    List {
-                        ForEach(items) { item in
-                            NavigationLink {
-                                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                            } label: {
-                                Text(item.timestamp!, formatter: itemFormatter)
-                            }
-                        }
-                        .onDelete(perform: deleteItems)
-                    }
-                }
+//                Section {
+//                    List {
+//                        ForEach(items) { item in
+//                            NavigationLink {
+//                                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+//                            } label: {
+//                                Text(item.timestamp!, formatter: itemFormatter)
+//                            }
+//                        }
+//                        .onDelete(perform: deleteItems)
+//                    }
+//                }
             }
             .navigationTitle("My Journey")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    EditButton()
+//                }
+//                ToolbarItem {
+//                    Button("Add") {
+//                        dataModel.getData()
+////                        print($dataModel.data)
+//                    }
+//                }
+//            }
         }
     }
     
@@ -129,6 +132,7 @@ private let itemFormatter: DateFormatter = {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        HomeView(dataModel: NotionViewModel())
+    
     }
 }

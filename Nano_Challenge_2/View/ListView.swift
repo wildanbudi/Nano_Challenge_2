@@ -15,33 +15,38 @@ struct ListView: View {
         animation: .default)
     private var items: FetchedResults<Item>
     @State var status = true
+    @State var isModal: Bool = false
+    @StateObject var dataModel: NotionViewModel
     
     var body: some View {
         NavigationView {
             Form {
-                Section {
-                    VStack(alignment: .leading, spacing: 20) {
-                        Text("Design")
-                        Text("Task 1")
-                        HStack {
-                            Text("Date")
-                            Spacer()
-                            Text("HIgh")
+                NavigationLink(destination: EditView(Model: viewModel())) {
+//                    Section {
+                        VStack(alignment: .leading, spacing: 20) {
+                            Text("Design")
+                            Text("Task 1")
+                            HStack {
+                                Text("Date")
+                                Spacer()
+                                Text("HIgh")
+                            }
                         }
-                    }
-                    .padding(.vertical)
-                    .listRowInsets(EdgeInsets())
                 }
-                .padding(.horizontal)
+                .padding(.all)
+                .listRowInsets(EdgeInsets())
                 .background(Image("Design-BG").resizable().scaledToFill())
-
             }
-            .navigationTitle("Activity")
+            .navigationTitle("Learning List")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
+                    Button(action: {
+                        self.isModal = true
+                    }) {
+                        Label("Add", systemImage:"plus")
+                    }.sheet(isPresented: $isModal, content: {
+                        AddView(Model: viewModel(), isModal: $isModal)
+                    })
                 }
             }
         }
@@ -66,6 +71,6 @@ struct ListView: View {
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView()
+        ListView(dataModel: NotionViewModel())
     }
 }
